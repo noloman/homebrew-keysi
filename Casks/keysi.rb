@@ -1,7 +1,7 @@
 # The Homebrew cask, as it is published to the noloman/homebrew-keysi tap.
 #
 # GENERATED FROM, NOT BY HAND: scripts/cask.sh renders this file — filling
-# in 1.0.11 and 1b7b00d6c326ec7ea8cb86c2167e1f73e01b58400c6b7cdc3aa3642988f359cc from the DMG that release actually serves —
+# in 1.0.12 and bc62e0273e580475f8f0e65542e561f1bc7ba44996973e1c650f0e863193d026 from the DMG that release actually serves —
 # and commits the result to the tap as Casks/keysi.rb. Edit this template;
 # never edit the copy in the tap, because the next release overwrites it.
 #
@@ -13,8 +13,8 @@
 # those. A tap needs no permission from anyone and installs identically; see
 # marketing/copy/directories.md for when to revisit the core repo.
 cask "keysi" do
-  version "1.0.11"
-  sha256 "1b7b00d6c326ec7ea8cb86c2167e1f73e01b58400c6b7cdc3aa3642988f359cc"
+  version "1.0.12"
+  sha256 "bc62e0273e580475f8f0e65542e561f1bc7ba44996973e1c650f0e863193d026"
 
   # The DMG the GitHub Release serves, which is the same artifact the
   # site's Download button hands out. No `verified:` — Homebrew 7 deprecated
@@ -43,10 +43,13 @@ cask "keysi" do
   # it owns the version in /Applications and reports every self-update as
   # an outdated cask it wants to "fix" by reinstalling over the top.
   auto_updates true
-  # macOS 26 Tahoe or newer, which is Keysi's deployment target. A bare
-  # symbol is Homebrew's spelling of ">=" here; `">= :tahoe"` is the same
-  # requirement and `brew style` rewrites it to this.
-  depends_on macos: :tahoe
+  # Substituted by scripts/cask.sh from the served app's own
+  # LSMinimumSystemVersion, because `brew audit` fails the cask when the two
+  # disagree and a hard-coded symbol is wrong for one release every time the
+  # deployment target moves. A bare symbol is Homebrew's spelling of ">="
+  # here; `">= :sonoma"` is the same requirement and `brew style` rewrites it
+  # to this.
+  depends_on macos: :sonoma
 
   app "Keysi.app"
 
