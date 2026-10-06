@@ -1,7 +1,7 @@
 # The Homebrew cask, as it is published to the noloman/homebrew-keysi tap.
 #
 # GENERATED FROM, NOT BY HAND: scripts/cask.sh renders this file — filling
-# in 1.0.24 and fda484324e2fe67773295890bee2558943ec8bfa90e9bf81971e0ef913824e26 from the DMG that release actually serves —
+# in 1.0.25 and 41f9ab9a79a6e95461de210193a04a774af07a847c613429944951b3ef1e13bc from the DMG that release actually serves —
 # and commits the result to the tap as Casks/keysi.rb. Edit this template;
 # never edit the copy in the tap, because the next release overwrites it.
 #
@@ -13,8 +13,8 @@
 # those. A tap needs no permission from anyone and installs identically; see
 # marketing/copy/directories.md for when to revisit the core repo.
 cask "keysi" do
-  version "1.0.24"
-  sha256 "fda484324e2fe67773295890bee2558943ec8bfa90e9bf81971e0ef913824e26"
+  version "1.0.25"
+  sha256 "41f9ab9a79a6e95461de210193a04a774af07a847c613429944951b3ef1e13bc"
 
   # The DMG the GitHub Release serves, which is the same artifact the
   # site's Download button hands out. No `verified:` — Homebrew 7 deprecated
