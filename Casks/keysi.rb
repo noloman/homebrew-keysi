@@ -13,8 +13,8 @@
 # those. A tap needs no permission from anyone and installs identically; see
 # marketing/copy/directories.md for when to revisit the core repo.
 cask "keysi" do
-  version "1.0.38"
-  sha256 "a4b32c415315082ed97541cb4638d298be9f75dadb3413ddfd9b8354a5927a19"
+  version "1.0.39"
+  sha256 "8aa810871b7901b789d79cd4208d6c426dc2881498cf89bec3e13bfa6292bb27"
 
   # The DMG the GitHub Release serves, which is the same artifact the
   # site's Download button hands out. No `verified:` — Homebrew 7 deprecated
